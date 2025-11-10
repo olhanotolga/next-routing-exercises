@@ -3,7 +3,12 @@ import ScreenSaver from '../../../../components/ScreenSaver';
 
 async function ColorScreensaver({ params }) {
   const { namedColor } = await params;
-  return <ScreenSaver color={namedColor} />;
+  return (
+    <main className='screen-saver-wrapper'>
+      <ScreenSaver color={namedColor} />
+    </main>
+  )
+  ;
 }
 
 export default ColorScreensaver;
