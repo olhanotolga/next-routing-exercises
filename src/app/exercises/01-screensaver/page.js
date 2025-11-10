@@ -1,13 +1,7 @@
 import React from 'react';
 
-import ScreenSaver from '../../../components/ScreenSaver';
-
-function ScreenSaverExercise() {
-  return (
-    <main className="screen-saver-wrapper">
-      <ScreenSaver color="red" />
-    </main>
-  );
+function ScreenSaverExercise({ children }) {
+  return <main className='screen-saver-wrapper'>{children}</main>;
 }
 
 export default ScreenSaverExercise;
