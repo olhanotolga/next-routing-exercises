@@ -1,14 +1,17 @@
 'use client';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useRouter } from 'next/navigation'
+import { ToastContext } from '../../../../components/ToastProvider';
 
 function ContactPage() {
   const router = useRouter();
+  const { createToast  } = useContext(ToastContext);
 
   function handleSubmit(e) {
     e.preventDefault();
 
     router.push('/exercises/02-flash-messages');
+    createToast("Your message was received. We'll get back to you shortly!", 'success');
   }
   return (
     <main>

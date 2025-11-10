@@ -4,7 +4,7 @@ import './styles.css';
 
 function HomeLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>{children}</body>
     </html>
   );
